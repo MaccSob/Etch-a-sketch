@@ -1,4 +1,5 @@
 const container = document.getElementById("container");
+const btn1 = document.getElementById("Btn1")
 
 function makeRows(rows, cols) {
   container.style.setProperty('--grid-rows', rows);
@@ -8,5 +9,13 @@ function makeRows(rows, cols) {
     container.appendChild(cell).className = "grid-item";
   };
 };
-
-makeRows(16, 16);
+btn1.addEventListener("click", changeSize);
+function changeSize() {
+  let changeGrid = prompt("Enter desired grid size from 1 to 100");
+  let desiredValue = parseInt(changeGrid);
+  if (desiredValue > 1 && desiredValue <= 100) {
+    makeRows();
+  } else {
+    alert("Enter a digit from 1-100 range!");
+  }
+}
