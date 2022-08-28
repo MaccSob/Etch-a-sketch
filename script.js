@@ -12,9 +12,9 @@ function makeRows(rows, cols) {
 btn1.addEventListener("click", changeSize);
 function changeSize() {
   let changeGrid = prompt("Enter desired grid size from 1 to 100");
-  let desiredValue = parseInt(changeGrid);
-  if (desiredValue > 1 && desiredValue <= 100) {
-    makeRows();
+  let desiredSize = parseInt(changeGrid);
+  if (desiredSize > 1 && desiredSize <= 100) {
+    makeRows(desiredSize,desiredSize);
   } else {
     alert("Enter a digit from 1-100 range!");
   }

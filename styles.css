@@ -11,7 +11,7 @@
     padding: 1em;
     border: 0.5px solid #ddd;
     text-align: center;
-    transition: all 0s ease 60s; /*delay 1s*/
+    transition: all 0s ease 120s; 
     
   }
   
@@ -23,5 +23,5 @@
 
   }
  button {
-  padding: 2em;
+  padding: 3em;
  }
